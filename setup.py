@@ -7,7 +7,7 @@ setup(
 	author = "Greg King",
 	author_email = "greg@king-dev.com",
 	packages = ["Cyrcos"],
-	install_requires = ["matplotlib"],
+	install_requires = ["matplotlib", "numpy"],
 	licence = "MIT",
 	url = "https://github.com/GKing-Dev/Cyrcos",
 	keywords = "Circos matplotlib chord graph visualization graphics"
