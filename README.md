@@ -24,7 +24,7 @@ cyr_plot = Cyrcos(5)
 ```
 
 
-[[examples/Cyrcos_example_1.png]]
+![Cyrcos Example 1](examples/Cyrcos_example_1.png)
 
 
 This graph doesn't show much of anything yet, so let's add some paths connecting the groups!
@@ -41,7 +41,7 @@ cyr_plot.Add_Paths([20, 115, 330, 160], [250, 195, 50, 310])
 ```
 
 
-[[examples/Cyrcos_example_2.png]]
+![Cyrcos Example 2](examples/Cyrcos_example_2.png)
 
 
 You'll notice the outer circle segment colors transition from solid-shaded to transparent, which could (for example) suggest the prevalence of a member in a group; the segments can be set to completely solid during creation by Cyrcos(fade_segments = False).
@@ -55,7 +55,7 @@ cyr_plot.Add_Paths([20, 115, 330, 160], [250, 195, 50, 310], [13, 2, 4, 15], [5,
 ```
 
 
-[[examples/Cyrcos_example_3.png]]
+![Cyrcos Example 3](examples/Cyrcos_example_3.png)
 
 
 Now things are a bit more appealing! If certain relationships are more important to highlight than others, changing the order of the paths to draw can show them off - subsequent paths are drawn on top of the previous inputs. Swapping the first and last ribbons gives the following z-order:
@@ -70,7 +70,7 @@ cyr_plot.Add_Text("Note the\nchange in\nz-order!", x = 0.32, y = 0.57, color = "
 ```
 
 
-[[examples/Cyrcos_example_4.png]]
+![Cyrcos Example 4](examples/Cyrcos_example_4.png)
 
 
 The chord color is automatically set to the color of the originating group, but this can be easily changed using the color_by argument of Add_Paths. A list of colors (any color type accepted by matplotlib) of the same length as the number of paths will color each manually, or "end" to use the color of the ending segment:
@@ -82,7 +82,7 @@ cyr_plot.Add_Paths([160, 115, 330, 20], [310, 195, 50, 250], [15, 2, 4, 13], [28
 ```
 
 
-[[examples/Cyrcos_example_5.png]]
+![Cyrcos Example 5](examples/Cyrcos_example_5.png)
 
 
 
@@ -92,7 +92,7 @@ cyr_plot.Add_Paths([160, 115, 330, 20], [310, 195, 50, 250], [15, 2, 4, 13], [28
 ```
 
 
-[[examples/Cyrcos_example_6.png]]
+![Cyrcos Example 6](examples/Cyrcos_example_6.png)
 
 
 Additionally, path color names can be intermixed with "start" or "end" to use the corresponding segments at will per path:
@@ -104,7 +104,7 @@ cyr_plot.Add_Paths([160, 115, 330, 20], [310, 195, 50, 250], [15, 2, 4, 13], [28
 ```
 
 
-[[examples/Cyrcos_example_7.png]]
+![Cyrcos Example 7](examples/Cyrcos_example_7.png)
 
 
 If you prefer to have all of the group segments touching, just change the gap_size setting to 0 during creation:
@@ -116,7 +116,7 @@ cyr_plot.Add_Paths([160, 115, 330, 20], [310, 195, 50, 250], [15, 2, 4, 13], [28
 ```
 
 
-[[examples/Cyrcos_example_8.png]]
+![Cyrcos Example 8](examples/Cyrcos_example_8.png)
 
 
 You may have noticed a potential problem with the above change, one that will be even more apparent if you decide to try out a wider gap size:
@@ -128,7 +128,7 @@ cyr_plot.Add_Paths([160, 115, 330, 20], [310, 195, 50, 250], [15, 2, 4, 13], [28
 ```
 
 
-[[examples/Cyrcos_example_9.png]]
+![Cyrcos Example 9](examples/Cyrcos_example_9.png)
 
 
 Now the problem with Add_Paths is clearer - using fixed angles and widths for our placement of connecting paths means that a change to the order or relative size of the group segments can break the figure completely.
@@ -153,7 +153,7 @@ group_cyrcos.Add_Paths_By_Segment(starting_segments, ending_segments, start_rati
 ```
 
 
-[[examples/Cyrcos_example_10.png]]
+![Cyrcos Example 10](examples/Cyrcos_example_10.png)
 
 
 By describing paths in relative terms of their locations per segment, you can much more easily change the relative sizes in the figure without breaking the relationships:
@@ -165,7 +165,7 @@ group_cyrcos.Add_Paths_By_Segment(starting_segments, ending_segments, start_rati
 ```
 
 
-[[examples/Cyrcos_example_11.png]]
+![Cyrcos Example 11](examples/Cyrcos_example_11.png)
 
 
 
@@ -175,7 +175,7 @@ group_cyrcos.Add_Paths_By_Segment(starting_segments, ending_segments, start_rati
 ```
 
 
-[[examples/Cyrcos_example_12.png]]
+![Cyrcos Example 12](examples/Cyrcos_example_12.png)
 
 
 Additional visual attributes for Cyrcos graphs:
@@ -188,7 +188,7 @@ group_cyrcos.Add_Legend("Groups", shadow = True)
 ```
 
 
-[[examples/Cyrcos_example_13.png]]
+![Cyrcos Example 13](examples/Cyrcos_example_13.png)
 
 
 
@@ -199,5 +199,5 @@ group_cyrcos.Add_Legend("Groups", labels = ["Peripheral Blood", "Plasmablasts", 
 ```
 
 
-[[examples/Cyrcos_example_14.png]]
+![Cyrcos Example 14](examples/Cyrcos_example_14.png)
 
